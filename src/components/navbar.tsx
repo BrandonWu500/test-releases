@@ -1,5 +1,5 @@
 type Props = {};
 const Navbar = (props: Props) => {
-  return <div>Navbarr</div>;
+  return <div>Navbar</div>;
 };
 export default Navbar;

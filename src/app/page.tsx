@@ -1,5 +1,5 @@
 type Props = {};
 const Home = (props: Props) => {
-  return <div>Homee</div>;
+  return <div>Home</div>;
 };
 export default Home;
