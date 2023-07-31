@@ -1,9 +1,9 @@
-# 0.2.0 (2023-07-31)
+# 0.3.0 (2023-07-31)
 
 
 ### Features
 
-* create home page ([d1b9317](https://github.com/BrandonWu500/test-releases/commit/d1b93171019f229a4c144fa3038009f831bebf81))
+* add navbar component to layout ([0569da5](https://github.com/BrandonWu500/test-releases/commit/0569da53e33b8fdfa317e075e661b1ab87a5ff9f))
 
 
 
