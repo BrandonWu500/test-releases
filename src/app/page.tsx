@@ -1,5 +1,11 @@
+import Hero from "@/components/hero";
+
 type Props = {};
 const Home = (props: Props) => {
-  return <div>Homes</div>;
+  return (
+    <div>
+      <Hero />
+    </div>
+  );
 };
 export default Home;
