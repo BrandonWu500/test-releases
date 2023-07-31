@@ -1,29 +1,32 @@
-name: Releases
+name: Release
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
-  changelog:
-    runs-on: ubuntu-latest
+  release:
     permissions:
       contents: write
-
+      issues: write
+      pull-requests: write
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
-      - name: Conventional Changelog Action
-        id: changelog
-        uses: TriPSs/conventional-changelog-action@v3
+      - uses: actions/setup-node@v3
         with:
-          skip-git-pull: true
+          node-version: "18.x"
 
-      - name: Create Release
-        uses: ncipollo/release-action@v1
-        if: steps.changelog.outputs.skipped == 'false'
+      - name: Get npm cache directory
+        id: npm-cache-dir
+        shell: bash
+        run: echo "dir=$(npm config get cache)" >> ${GITHUB_OUTPUT}
+      - uses: actions/cache@v3
+        id: npm-cache # use this to check for `cache-hit` ==> if: steps.npm-cache.outputs.cache-hit != 'true'
         with:
-          tag: ${{ steps.changelog.outputs.tag }}
-          name: ${{ steps.changelog.outputs.tag }}
-          body: ${{ steps.changelog.outputs.clean_changelog }}
-          generateReleaseNotes: true
+          path: ${{ steps.npm-cache-dir.outputs.dir }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - run: npm ci
+      - run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
