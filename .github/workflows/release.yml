@@ -1,6 +1,8 @@
 name: Releases
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   changelog:
@@ -24,3 +26,4 @@ jobs:
           tag: ${{ steps.changelog.outputs.tag }}
           name: ${{ steps.changelog.outputs.tag }}
           body: ${{ steps.changelog.outputs.clean_changelog }}
+          generateReleaseNotes: true
