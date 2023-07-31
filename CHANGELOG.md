@@ -1,9 +1,9 @@
-# 0.3.0 (2023-07-31)
+# 0.4.0 (2023-07-31)
 
 
 ### Features
 
-* add navbar component to layout ([0569da5](https://github.com/BrandonWu500/test-releases/commit/0569da53e33b8fdfa317e075e661b1ab87a5ff9f))
+* add footer component to layout ([a007cd0](https://github.com/BrandonWu500/test-releases/commit/a007cd0d20047f01715b4688a834245cb5ed32cf))
 
 
 
