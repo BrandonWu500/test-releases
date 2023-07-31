@@ -1,9 +1,9 @@
-# 0.5.0 (2023-07-31)
+# 0.6.0 (2023-07-31)
 
 
 ### Features
 
-* update navbar ([#3](https://github.com/BrandonWu500/test-releases/issues/3)) ([6a5ea9e](https://github.com/BrandonWu500/test-releases/commit/6a5ea9ebca76c3da719ae7aff077eb82bfe1e482))
+* add hero section to home page ([#5](https://github.com/BrandonWu500/test-releases/issues/5)) ([b9f0794](https://github.com/BrandonWu500/test-releases/commit/b9f079456f877b9a8af64a717d018297a7daa119))
 
 
 
