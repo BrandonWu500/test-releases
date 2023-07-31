@@ -1,5 +1,5 @@
 type Props = {};
 const Logo = (props: Props) => {
-  return <div>Logo</div>;
+  return <div>LOGO</div>;
 };
 export default Logo;
