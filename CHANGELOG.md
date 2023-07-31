@@ -1,9 +1,9 @@
-# 0.4.0 (2023-07-31)
+## 0.4.1 (2023-07-31)
 
 
-### Features
+### Bug Fixes
 
-* add footer component to layout ([a007cd0](https://github.com/BrandonWu500/test-releases/commit/a007cd0d20047f01715b4688a834245cb5ed32cf))
+* minor bugs ([#1](https://github.com/BrandonWu500/test-releases/issues/1)) ([bd9c59d](https://github.com/BrandonWu500/test-releases/commit/bd9c59d5e9d3615b25d947851432903771c18452))
 
 
 
