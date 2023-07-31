@@ -1,9 +1,9 @@
-## 0.4.1 (2023-07-31)
+# 0.5.0 (2023-07-31)
 
 
-### Bug Fixes
+### Features
 
-* minor bugs ([#1](https://github.com/BrandonWu500/test-releases/issues/1)) ([bd9c59d](https://github.com/BrandonWu500/test-releases/commit/bd9c59d5e9d3615b25d947851432903771c18452))
+* update navbar ([#3](https://github.com/BrandonWu500/test-releases/issues/3)) ([6a5ea9e](https://github.com/BrandonWu500/test-releases/commit/6a5ea9ebca76c3da719ae7aff077eb82bfe1e482))
 
 
 
